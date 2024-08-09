@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "907397068328",
+    "project_id": "learn-firebase-iwata",
+    "storage_bucket": "learn-firebase-iwata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907397068328:android:23e265065405a91a3fe71d",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm9ZQf-Z0yBvc9VH9tGdmsw4n6UYKfzFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907397068328:android:357885e270973ae63fe71d",
+        "android_client_info": {
+          "package_name": "com.example.learn_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm9ZQf-Z0yBvc9VH9tGdmsw4n6UYKfzFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
