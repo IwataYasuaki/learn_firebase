@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:learn_firebase/page2.dart';
+import 'package:go_router/go_router.dart';
+import 'package:learn_firebase/router.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -21,14 +22,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Home'),
-      navigatorObservers: [observer],
+      routerConfig: AppRouter.router,
     );
   }
 }
@@ -59,16 +59,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         actions: [
           IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const Page2(),
-                    settings: const RouteSettings(name: '/page2'),
-                  ),
-                );
-              },
-              icon: const Icon(Icons.arrow_forward))
+            onPressed: () => context.go('/page2'),
+            icon: const Icon(Icons.arrow_forward),
+          )
         ],
       ),
       body: Center(
